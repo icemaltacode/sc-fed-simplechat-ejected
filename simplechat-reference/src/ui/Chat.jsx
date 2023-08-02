@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import styled from "styled-components";
 import fancyTime from "../util/FancyTime";
 import getUserColor from "../util/UserColor";

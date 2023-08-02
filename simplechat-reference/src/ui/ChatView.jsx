@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useQuery } from "@tanstack/react-query";
 import styled from "styled-components";
 import { getChats } from "../api/chat";

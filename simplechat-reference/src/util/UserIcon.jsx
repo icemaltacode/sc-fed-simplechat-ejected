@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useMemo } from "react";
 import styled from "styled-components";
 import { minidenticon } from "minidenticons";

@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import styled from 'styled-components';
 import { useRef } from 'react';
 import { useMutation, useQueryClient } from '@tanstack/react-query';
@@ -55,7 +56,7 @@ function SendMessage({ senderId, senderName }) {
 
     const addChatMutation = useMutation({
         mutationFn: addChat,
-        onSuccess: data => { queryClient.invalidateQueries(['chats']) }
+        onSuccess: () => { queryClient.invalidateQueries(['chats']) }
     });
 
     const onSubmit = e => {
